@@ -9,6 +9,7 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
 
 <AnchorPane prefHeight="134.0" prefWidth="453.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.DepartmentFormController">
    <children>
@@ -28,7 +29,10 @@
             <Label text="Name" GridPane.rowIndex="1" />
             <TextField fx:id="txtId" editable="false" prefHeight="26.0" prefWidth="205.0" GridPane.columnIndex="1" />
             <TextField fx:id="txtName" prefHeight="26.0" prefWidth="215.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-            <Label fx:id="labelErrorName" prefHeight="16.0" prefWidth="120.0" textFill="RED" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Label fx:id="labelErrorName" prefHeight="16.0" prefWidth="178.0" textFill="RED" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <font>
+                  <Font size="12.0" />
+               </font></Label>
             <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
                <children>
                   <ButtonBar prefHeight="40.0" prefWidth="200.0">
