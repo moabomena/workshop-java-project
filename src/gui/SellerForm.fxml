@@ -2,6 +2,7 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -11,29 +12,33 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="134.0" prefWidth="453.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.SellerFormController">
+<AnchorPane prefHeight="332.0" prefWidth="570.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.SellerFormController">
    <children>
-      <GridPane layoutX="35.0" layoutY="42.0" prefHeight="80.0" prefWidth="423.0" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="20.0">
+      <GridPane layoutX="13.0" layoutY="42.0" prefHeight="261.0" prefWidth="480.0" AnchorPane.leftAnchor="13.0" AnchorPane.topAnchor="20.0">
         <columnConstraints>
-          <ColumnConstraints hgrow="SOMETIMES" maxWidth="74.0" minWidth="10.0" prefWidth="54.0" />
-          <ColumnConstraints hgrow="SOMETIMES" maxWidth="299.0" minWidth="10.0" prefWidth="188.0" />
-            <ColumnConstraints hgrow="SOMETIMES" maxWidth="215.0" minWidth="0.0" prefWidth="181.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="122.0" minWidth="10.0" prefWidth="98.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="299.0" minWidth="10.0" prefWidth="180.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="215.0" minWidth="0.0" prefWidth="169.0" />
         </columnConstraints>
         <rowConstraints>
-          <RowConstraints maxHeight="31.0" minHeight="10.0" prefHeight="19.0" vgrow="SOMETIMES" />
-          <RowConstraints maxHeight="24.0" minHeight="5.0" prefHeight="17.0" vgrow="SOMETIMES" />
-          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="40.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="36.0" minHeight="5.0" prefHeight="36.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="36.0" minHeight="10.0" prefHeight="36.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="48.0" minHeight="10.0" prefHeight="32.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="62.0" minHeight="8.0" prefHeight="56.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="51.0" minHeight="10.0" prefHeight="27.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="38.0" minHeight="10.0" prefHeight="18.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
             <Label text="Id" />
             <Label text="Name" GridPane.rowIndex="1" />
-            <TextField fx:id="txtId" editable="false" prefHeight="26.0" prefWidth="205.0" GridPane.columnIndex="1" />
-            <TextField fx:id="txtName" prefHeight="26.0" prefWidth="215.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="txtId" editable="false" prefHeight="32.0" prefWidth="183.0" GridPane.columnIndex="1" />
+            <TextField fx:id="txtName" prefHeight="22.0" prefWidth="183.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
             <Label fx:id="labelErrorName" prefHeight="16.0" prefWidth="178.0" textFill="RED" GridPane.columnIndex="2" GridPane.rowIndex="1">
                <font>
                   <Font size="12.0" />
                </font></Label>
-            <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+            <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="6">
                <children>
                   <ButtonBar prefHeight="40.0" prefWidth="200.0">
                     <buttons>
@@ -43,6 +48,16 @@
                   </ButtonBar>
                </children>
             </HBox>
+            <Label text="Email" GridPane.rowIndex="2" />
+            <Label text="Birth Date" GridPane.rowIndex="3" />
+            <Label text="Department" GridPane.rowIndex="5" />
+            <TextField fx:id="txtEmail" prefHeight="18.0" prefWidth="183.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <DatePicker fx:id="dpBirthDate" prefHeight="21.0" prefWidth="183.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label fx:id="labelErrorEmail" textFill="RED" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Label fx:id="labelErrorBirthDate" textFill="RED" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <Label fx:id="labelErrorBaseSalary" textFill="RED" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <Label text="Base Salary" GridPane.rowIndex="4" />
+            <TextField fx:id="txtBaseSalary" prefHeight="43.0" prefWidth="197.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
          </children>
       </GridPane>
    </children>

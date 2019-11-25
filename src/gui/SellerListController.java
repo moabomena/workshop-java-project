@@ -80,10 +80,10 @@ public class SellerListController implements Initializable, DataChangeListener {
 
 	@Override
 	public void initialize(URL url, ResourceBundle rb) {
-		InitizalizeNode();
+		InitizalizeNodes();
 	}
 
-	private void InitizalizeNode() {
+	private void InitizalizeNodes() {
 		tableColumnId.setCellValueFactory(new PropertyValueFactory<>("id"));
 		tableColumnName.setCellValueFactory(new PropertyValueFactory<>("name"));
 		tableColumnEmail.setCellValueFactory(new PropertyValueFactory<>("email"));
